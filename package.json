@@ -1,0 +1,40 @@
+{
+  "name": "user-details-api",
+  "version": "1.0.0",
+  "description": "Create, Update and Save User deatils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "build": "webpack"
+  },
+  "author": "Nithya T",
+  "license": "ISC",
+  "keywords": [
+    "prometheus",
+    "node.js",
+    "monitoring",
+    "grafana",
+    "metrics"
+  ],
+  "dependencies": {
+    "aws-sdk": "^2.1201.0",
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-basic-auth": "^1.2.1",
+    "express-healthcheck": "^0.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "kafkajs": "^2.0.2",
+    "mongoose": "^6.3.4",
+    "nodemon": "^2.0.16",
+    "pino": "^8.1.0",
+    "prom-client": "^14.0.1",
+    "response-time": "^2.3.2",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
