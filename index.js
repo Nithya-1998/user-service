@@ -1,6 +1,6 @@
 const express = require("express");
-const mongoose = require("mongoose");
-const mongoConnectionUri = "mongodb://localhost:27017/stock_market_db";
+//const mongoose = require("mongoose");
+//const mongoConnectionUri = "mongodb://localhost:27017/stock_market_db";
 const routes = require("./routes/userdetails");
 const bodyParser = require("body-parser");
 const startMetricsServer = require("./metrics/metrics");
@@ -8,14 +8,14 @@ const swaggerDocs = require("./utils/swagger");
 const jwt = require("jsonwebtoken");
 const cors = require("cors");
 
-mongoose.connect(mongoConnectionUri, () => {
-  console.log("Connected to DB");
-});
-const database = mongoose.connection;
+// mongoose.connect(mongoConnectionUri, () => {
+//   console.log("Connected to DB");
+// });
+// const database = mongoose.connection;
 
-database.on("error", (error) => {
-  console.log("DB connection error", error);
-});
+// database.on("error", (error) => {
+//   console.log("DB connection error", error);
+// });
 
 const app = express();
 
