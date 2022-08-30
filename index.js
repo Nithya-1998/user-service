@@ -54,7 +54,7 @@ app.use(express.json());
 
 app.use("/users", routes);
 
-const port = 8001;
+const port = 8080;
 app.listen(port, () => {
   console.log(`Server Started at ${port}`);
 
